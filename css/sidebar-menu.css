@@ -1,0 +1,97 @@
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1D2536; }
+  .sidebar-menu > li {
+    position: relative;
+    margin: 0;
+    padding: 0; }
+    .sidebar-menu > li > a {
+      padding: 20px 5px 20px 15px;
+      display: block;
+      color: #fff; }
+      .sidebar-menu > li > a .iconTu img{
+        margin: 4px 15px 0 12px;
+      }
+      .sidebar-menu > li > a .gujian img{
+        margin-right: 11px;
+      }
+    .sidebar-menu > li:hover > a, .sidebar-menu > li.active > a {
+      background:linear-gradient(90deg,rgba(66,187,255,1),rgba(29,43,54,1));
+      /* border-left-color: #3c8dbc;  */
+    }
+    .sidebar-menu > li.active > a{
+      margin-top: 11px;
+    }
+    .sidebar-menu > li > .treeview-menu {
+      background: #111621; }
+    .sidebar-menu > li .label,
+    .sidebar-menu > li .badge {
+      margin-top: 3px;
+      margin-right: 5px; }
+  .sidebar-menu li.header {
+    padding: 10px 25px 10px 15px;
+    font-size: 12px;
+    color: #4b646f;
+    background: #1a2226; }
+  .sidebar-menu li > a > .fa-angle-down {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 3px;
+    transition:transform 0.3s;
+   }
+  .sidebar-menu li.active > a > .fa-angle-down {
+    transform: rotate(-180deg); }
+  .sidebar-menu li.active > .treeview-menu {
+    display: block; }
+  .sidebar-menu a {
+    color: #b8c7ce;
+    text-decoration: none; }
+  .sidebar-menu .treeview-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    /*.sidebar-menu .treeview-menu .treeview-menu {
+      padding-left: 20px; }*/
+    .sidebar-menu .treeview-menu > li {
+      margin: 0;
+      /*padding: 10px 5px 10px 0px;*/
+      }
+      .sidebar-menu .treeview-menu li a{
+        padding: 10px 5px 10px 2px;
+        display: block;
+        border-left: 1px solid #3c8dbc;
+        border-left-color: #3c8dbc;
+        font-size: 12px;
+        /* color: #8aa4af; */
+        /*padding-left: 15px;*/
+        width: 80%;
+        margin-left: 33px;
+        }
+        /*.sidebar-menu .treeview-menu>.blueBoder{
+           border-left: 1px solid transparent;
+        }
+        .sidebar-menu .treeview-menu>.blueBoder:hover{
+          border-left: 1px solid #42BBFF;
+        }*/
+        .sidebar-menu .treeview-menu > li > a > .fa {
+          margin: 0;
+          position: relative;
+          left:-7px;
+          width: 20px;
+        }
+        .sidebar-menu .treeview-menu > .blueBoder > a > .fa{
+           margin: 0;
+           position: relative;
+           left:-8px;
+           width: 20px;
+        }
+        .sidebar-menu .treeview-menu > li > a > .fa-angle-left,
+        .sidebar-menu .treeview-menu > li > a > .fa-angle-down {
+          width: auto; }
+      .sidebar-menu .treeview-menu > li.active > a, .sidebar-menu .treeview-menu > li > a:hover {
+        color: #fff!important;}

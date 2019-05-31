@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WEB环境部署测试</title>
+<style type="text/css">
+<!--
+BODY{text-align:center;} 
+TABLE{BORDER-COLLAPSE:collapse;}
+TD,TH {BORDER:1px solid #000000;}
+TH{BACKGROUND-COLOR:yellowgreen;FONT-WEIGHT:bold;}
+-->
+</style>
+</head>
+<body>
+<h2>Congratulations on your success.</h2>
+<table width="700" cellspacing="1" cellpadding="3">
+    <tr><th colspan="2">服务器信息</th></tr>
+    <tr>
+       <td>主机名</td>
+       <td><?=$_SERVER['SERVER_NAME']?></td>
+    </tr>
+    <tr>
+       <td>主机地址</td>
+       <td><?=$_SERVER['SERVER_ADDR'].":".$_SERVER['SERVER_PORT']?></td>
+    </tr>
+    <tr>
+       <td>服务器软件</td>
+       <td><?=$_SERVER['SERVER_SOFTWARE']?></td>
+    </tr>
+    <tr>
+       <td>网站主目录</td>
+       <td><?=$_SERVER["DOCUMENT_ROOT"]?></td>
+    </tr>
+    <tr><th colspan="2">SQLite 连接测试</th></tr>
+    <tr>
+       <td>SQLite</td>
+       <td><?=function_exists("sqlite_close")?YES." / ".sqlite_libversion():NO?></td>
+    </tr>
+    <tr>
+       <td>连接数据库(内存)</td>
+       <td><b><? $db = mysql_connect('127.0.0.1', 'root', '123');?><?=($db?"<font color=green>连接正常</font>":"<font color=red>连接失败</font>");?><? sqlite_close ($db);?></b></td>
+    </tr>
+</table>
+</body>
+</html>
